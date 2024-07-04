@@ -1,0 +1,85 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+    background-image: url('https://www.cloudmasters.es/wp-content/uploads/2020/06/big-data.jpg'); /* Imagen de fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%; /* Ancho del 80% */
+    max-width: 1000px; /* Ancho máximo de 1000px */
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+    padding: 30px; /* Relleno de 30px */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título principal */
+h1 {
+    text-align: center; /* Centrar el texto */
+    color: #343a40; /* Color del texto */
+    font-size: 1.8em; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Margen superior */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Borde */
+}
+
+th, td {
+    padding: 8px; /* Relleno */
+    text-align: left; /* Alinear a la izquierda */
+}
+
+th {
+    background-color: #f2f2f2; /* Fondo para los encabezados */
+}
+
+/* Estilos para los botones */
+button {
+    margin-top: 20px; /* Margen superior */
+    padding: 12px; /* Relleno */
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+    display: block; /* Mostrar como bloque */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+.delete-btn {
+    background-color: #d9534f; /* Color de fondo para el botón de eliminar */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    padding: 8px; /* Relleno */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.delete-btn:hover {
+    background-color: #c9302c; /* Color de fondo al pasar el cursor */
+}

@@ -1,0 +1,91 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente del texto */
+    background-image: url('https://www.cloudmasters.es/wp-content/uploads/2020/06/big-data.jpg'); /* Imagen de fondo */
+    background-position: center; /* Posición de la imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo para cubrir el contenedor */
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar relleno */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Altura mínima de la ventana gráfica */
+    box-sizing: border-box; /* Incluir relleno y borde en el ancho y alto total */
+}
+
+/* Estilos del contenedor principal */
+.container {
+    width: 90%; /* Ancho del 90% */
+    max-width: 500px; /* Ancho máximo de 500px */
+    padding: 20px; /* Relleno interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir relleno y borde en el ancho y alto total */
+}
+
+/* Estilos del título */
+h1 {
+    text-align: center; /* Centrar el texto */
+    color: #343a40; /* Color del texto */
+    font-size: 1.5em; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Dirección de los elementos en columna */
+}
+
+/* Estilos de las etiquetas */
+label {
+    margin-top: 10px; /* Margen superior */
+    color: #495057; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos de los campos de entrada */
+input {
+    padding: 10px; /* Relleno interno */
+    margin-top: 5px; /* Margen superior */
+    border: 1px solid #ced4da; /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición del color del borde */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluir relleno y borde en el ancho y alto total */
+}
+
+/* Estilos de los campos de entrada cuando están enfocados */
+input:focus {
+    border-color: #80bdff; /* Color del borde cuando está enfocado */
+    outline: none; /* Sin contorno */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Sombra del campo cuando está enfocado */
+}
+
+/* Estilos de los botones */
+button {
+    margin-top: 20px; /* Margen superior */
+    padding: 12px; /* Relleno interno */
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s; /* Transición del color de fondo */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluir relleno y borde en el ancho y alto total */
+}
+
+/* Estilos de los botones cuando se hace hover */
+button:hover {
+    background-color: #0056b3; /* Color de fondo cuando está en hover */
+}
+
+/* Estilos del mensaje */
+#message {
+    margin-top: 20px; /* Margen superior */
+    text-align: center; /* Centrar el texto */
+    color: #d9534f; /* Color del texto */
+}
