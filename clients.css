@@ -9,18 +9,19 @@ body {
     display: flex; /* Usar flexbox */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    height: 100vh; /* Altura completa de la ventana */
+    min-height: 100vh; /* Altura mínima de la ventana */
 }
 
 /* Contenedor principal */
 .container {
-    width: 90%; /* Ancho del 90% en pantallas pequeñas */
-    max-width: 100%; /* Ancho máximo completo en pantallas grandes */
-    margin: 20px auto; /* Mantener margen superior e inferior de 20px, centrado horizontalmente */
+    width: 95%; /* Ancho del 95% */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
     padding: 20px; /* Relleno de 20px */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 10px; /* Bordes redondeados */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
 }
 
 /* Título principal */
@@ -89,18 +90,7 @@ button:hover {
 /* Ajustes para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
     .container {
-        width: 95%; /* Ancho del 95% en pantallas pequeñas */
+        width: 100%; /* Ancho completo en pantallas pequeñas */
         padding: 15px; /* Relleno ligeramente mayor */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        width: 100%; /* Ancho completo en pantallas muy pequeñas */
-        padding: 10px; /* Relleno más reducido */
-    }
-
-    button {
-        max-width: 100%; /* Ancho máximo completo para botones en pantallas pequeñas */
     }
 }
