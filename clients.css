@@ -14,10 +14,10 @@ body {
 
 /* Contenedor principal */
 .container {
-    width: 80%; /* Ancho del 80% */
-    max-width: 1000px; /* Ancho máximo de 1000px */
-    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
-    padding: 30px; /* Relleno de 30px */
+    width: 90%; /* Ancho del 90% en pantallas pequeñas */
+    max-width: 100%; /* Ancho máximo completo en pantallas grandes */
+    margin: 20px auto; /* Mantener margen superior e inferior de 20px, centrado horizontalmente */
+    padding: 20px; /* Relleno de 20px */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 10px; /* Bordes redondeados */
@@ -53,6 +53,8 @@ th {
 
 /* Estilos para los botones */
 button {
+    width: 100%; /* Ancho completo */
+    max-width: 200px; /* Ancho máximo de 200px */
     margin-top: 20px; /* Margen superior */
     padding: 12px; /* Relleno */
     background-color: #007bff; /* Color de fondo */
@@ -82,4 +84,23 @@ button:hover {
 
 .delete-btn:hover {
     background-color: #c9302c; /* Color de fondo al pasar el cursor */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Ancho del 95% en pantallas pequeñas */
+        padding: 15px; /* Relleno ligeramente mayor */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%; /* Ancho completo en pantallas muy pequeñas */
+        padding: 10px; /* Relleno más reducido */
+    }
+
+    button {
+        max-width: 100%; /* Ancho máximo completo para botones en pantallas pequeñas */
+    }
 }
